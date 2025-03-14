@@ -14,7 +14,10 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Nicky Choi",
+  title: {
+    default: "Nicky Choi",
+    template: "%s | Nicky Choi"
+  },
   description: "Personal website of Nicky Choi",
 };
 
