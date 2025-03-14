@@ -1,24 +1,6 @@
 {
-  "commit": "a1aa7e6f8798834ec8260d43ee28f50f06695364",
-  "generated": "Fri, 11 Oct 2024 03:32:13 GMT",
+  "commit": "132e470f4f96d58eae5c8ea9ad5e79309d93a657",
+  "generated": "2024-10-13T21:59:30.272Z",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "46328abb3aa9a1b3d6914ab7beba89f51891714c",
-        "hash": "2035713965",
-        "path": "outstatic/content/posts/test.md"
-      },
-      "author": {
-        "name": "Nicky Choi",
-        "picture": "https://avatars.githubusercontent.com/u/32828004?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "",
-      "description": "",
-      "publishedAt": "2024-10-11T02:33:19.522Z",
-      "slug": "test",
-      "status": "published",
-      "title": "Test"
-    }
   ]
 }
