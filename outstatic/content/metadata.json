@@ -1,10 +1,10 @@
 {
-  "commit": "a3d61a68eef0b392e1ecf043c74ebc3980321f28",
-  "generated": "2025-05-03T20:59:37.365Z",
+  "commit": "",
+  "generated": "Sat, 03 May 2025 21:10:36 GMT",
   "metadata": [
     {
       "__outstatic": {
-        "commit": "b8b8981f62c257c3b228cc704ef5b43b284756fb",
+        "commit": "c72bfdb15d2556f8b2bdf6d15ce66af31efe8e7d",
         "hash": "2294977390",
         "path": "outstatic/content/posts/cool-blog.mdx"
       },
@@ -20,7 +20,7 @@
     },
     {
       "__outstatic": {
-        "commit": "a3d61a68eef0b392e1ecf043c74ebc3980321f28",
+        "commit": "7b79abaa7fb7c40a6ae8e59d79f489599967d190",
         "hash": "840306773",
         "path": "outstatic/content/posts/second-blog-post.mdx"
       },
