@@ -1,6 +1,22 @@
 {
-  "commit": "132e470f4f96d58eae5c8ea9ad5e79309d93a657",
-  "generated": "2024-10-13T21:59:30.272Z",
+  "commit": "1d22b7ceed5661124dda99dfc52fb92420c017c5",
+  "generated": "2025-05-03T19:38:55.353Z",
   "metadata": [
+    {
+      "__outstatic": {
+        "commit": "1d22b7ceed5661124dda99dfc52fb92420c017c5",
+        "hash": "721131027",
+        "path": "outstatic/content/posts/test.mdx"
+      },
+      "author": {
+        "name": "Nicky Choi",
+        "picture": "https://avatars.githubusercontent.com/u/32828004?v=4"
+      },
+      "collection": "posts",
+      "publishedAt": "2025-05-03T18:56:46.379Z",
+      "slug": "test",
+      "status": "published",
+      "title": "Test"
+    }
   ]
 }
