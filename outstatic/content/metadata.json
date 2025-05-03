@@ -1,12 +1,12 @@
 {
-  "commit": "b007ce86cfe503e6589e5da8d840491416b74e16",
-  "generated": "2025-05-03T20:13:19.195Z",
+  "commit": "b8b8981f62c257c3b228cc704ef5b43b284756fb",
+  "generated": "2025-05-03T20:14:11.554Z",
   "metadata": [
     {
       "__outstatic": {
-        "commit": "b007ce86cfe503e6589e5da8d840491416b74e16",
-        "hash": "2620041922",
-        "path": "outstatic/content/posts/test.mdx"
+        "commit": "b8b8981f62c257c3b228cc704ef5b43b284756fb",
+        "hash": "2294977390",
+        "path": "outstatic/content/posts/cool-blog.mdx"
       },
       "author": {
         "name": "Nicky Choi",
@@ -14,7 +14,7 @@
       },
       "collection": "posts",
       "publishedAt": "2025-05-03T18:56:46.379Z",
-      "slug": "test",
+      "slug": "cool-blog",
       "status": "published",
       "title": "Cool Blog Post"
     }
