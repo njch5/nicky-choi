@@ -1,11 +1,11 @@
 {
-  "commit": "1d22b7ceed5661124dda99dfc52fb92420c017c5",
-  "generated": "2025-05-03T19:38:55.353Z",
+  "commit": "b007ce86cfe503e6589e5da8d840491416b74e16",
+  "generated": "2025-05-03T20:13:19.195Z",
   "metadata": [
     {
       "__outstatic": {
-        "commit": "1d22b7ceed5661124dda99dfc52fb92420c017c5",
-        "hash": "721131027",
+        "commit": "b007ce86cfe503e6589e5da8d840491416b74e16",
+        "hash": "2620041922",
         "path": "outstatic/content/posts/test.mdx"
       },
       "author": {
@@ -16,7 +16,7 @@
       "publishedAt": "2025-05-03T18:56:46.379Z",
       "slug": "test",
       "status": "published",
-      "title": "Test"
+      "title": "Cool Blog Post"
     }
   ]
 }
