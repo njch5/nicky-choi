@@ -1,5 +1,4 @@
 import React from "react";
-import markdownToHtml from "@/lib/markdownToHtml";
 import { Metadata } from "next";
 import { getDocuments } from "outstatic/server";
 
