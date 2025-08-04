@@ -1,11 +1,7 @@
-export default function RootLayout({
-  children
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning={true} id="outstatic">{children}</body>
+      <body id="outstatic">{children}</body>
     </html>
-  )
+  );
 }
