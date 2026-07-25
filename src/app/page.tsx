@@ -1,11 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import TypewriterText from "@/components/TypewriterText";
 
 export default function Home() {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const [isPaused, setIsPaused] = useState(true);
 
   const handleVideoClick = () => {
     if (videoRef.current) {
@@ -25,16 +26,30 @@ export default function Home() {
         </div>
 
         {/* Video Component */}
-        <video
-          ref={videoRef}
-          src="/animated-image.mp4"
-          width={500}
-          height={450}
-          muted
-          onClick={handleVideoClick}
-          loop
-          className="cursor-pointer shadow-[35px_28px_13px_0px_rgba(59,_130,_246,_0.15)]"
-        />
+        <div className="relative inline-block group">
+          <video
+            ref={videoRef}
+            src="/animated-image.mp4"
+            width={500}
+            height={450}
+            muted
+            onClick={handleVideoClick}
+            onPlay={() => setIsPaused(false)}
+            onPause={() => setIsPaused(true)}
+            onLoadedData={() =>
+              setIsPaused(videoRef.current ? videoRef.current.paused : true)
+            }
+            loop
+            className="cursor-pointer shadow-[35px_28px_13px_0px_rgba(59,_130,_246,_0.15)]"
+          />
+          {isPaused ? (
+            <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+              <span className="rounded-full border border-white/40 bg-black/35 px-3 py-1 text-xs font-medium uppercase tracking-wider text-white/90 shadow-sm backdrop-blur-sm opacity-80">
+                Click to Play
+              </span>
+            </div>
+          ) : null}
+        </div>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a

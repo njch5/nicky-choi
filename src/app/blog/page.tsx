@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { Metadata } from "next";
 import { getDocuments } from "outstatic/server";
 
@@ -17,8 +18,10 @@ export default async function BlogOverviewPage() {
             key={post.slug}
             className="border border-gray-300 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
           >
-            <h2 className="text-2xl font-semibold mb-4">{post.title}</h2>
-            <p className="text-gray-700">{post.title}</p>
+            <h2 className="text-2xl font-semibold mb-4">
+              <Link href={`/posts/${post.slug}`}>{post.title}</Link>
+            </h2>
+            <p className="text-gray-700">{post.description}</p>
           </div>
         ))}
       </div>
@@ -27,6 +30,6 @@ export default async function BlogOverviewPage() {
 }
 
 async function getData() {
-  const posts = await getDocuments("posts", ["title", "slug"]);
+  const posts = await getDocuments("posts", ["title", "description", "slug"]);
   return posts;
 }
