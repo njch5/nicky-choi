@@ -1,6 +1,6 @@
 {
-  "commit": "",
-  "generated": "Sat, 03 May 2025 21:10:36 GMT",
+  "commit": "d4e4d9f9b41813eddc106c5e3f3178d3cdadd44a",
+  "generated": "2026-07-26T01:54:12.482Z",
   "metadata": [
     {
       "__outstatic": {
@@ -33,6 +33,23 @@
       "slug": "second-blog-post",
       "status": "published",
       "title": "Second Blog Post"
+    },
+    {
+      "__outstatic": {
+        "commit": "d4e4d9f9b41813eddc106c5e3f3178d3cdadd44a",
+        "hash": "1134914351",
+        "path": "outstatic/content/posts/about-me.mdx"
+      },
+      "author": {
+        "name": "Nicky Choi",
+        "picture": "https://avatars.githubusercontent.com/u/32828004?v=4"
+      },
+      "collection": "posts",
+      "description": "Read this first to get to know me.",
+      "publishedAt": "2026-07-26T01:29:03.446Z",
+      "slug": "about-me",
+      "status": "draft",
+      "title": "About Me"
     }
   ]
 }
