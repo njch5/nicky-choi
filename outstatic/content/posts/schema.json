@@ -8,6 +8,23 @@
       "fieldType": "String",
       "dataType": "string",
       "title": "Description"
+    },
+    "keywords": {
+      "title": "Keywords",
+      "description": "",
+      "required": false,
+      "fieldType": "Tags",
+      "dataType": "array",
+      "values": [
+        {
+          "label": "personal",
+          "value": "personal"
+        },
+        {
+          "label": "about me",
+          "value": "aboutMe"
+        }
+      ]
     }
   }
 }
