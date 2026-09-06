@@ -1,6 +1,6 @@
 {
-  "commit": "df875f5b8d76341fff942172b33a9b03e26df5c3",
-  "generated": "2026-08-02T16:58:52.612Z",
+  "commit": "e1668586828b01d64cd208c2ac7e5222024d1694",
+  "generated": "2026-09-06T23:51:31.856Z",
   "metadata": [
     {
       "__outstatic": {
@@ -36,8 +36,8 @@
     },
     {
       "__outstatic": {
-        "commit": "df875f5b8d76341fff942172b33a9b03e26df5c3",
-        "hash": "1114686633",
+        "commit": "e1668586828b01d64cd208c2ac7e5222024d1694",
+        "hash": "892360983",
         "path": "outstatic/content/posts/about-me.mdx"
       },
       "author": {
@@ -46,9 +46,19 @@
       },
       "collection": "posts",
       "description": "Read this first to get to know me.",
-      "publishedAt": "2026-07-26T01:29:03.446Z",
+      "keywords": [
+        {
+          "label": "personal",
+          "value": "personal"
+        },
+        {
+          "label": "about me",
+          "value": "aboutMe"
+        }
+      ],
+      "publishedAt": "2026-09-06T07:00:00.000Z",
       "slug": "about-me",
-      "status": "draft",
+      "status": "published",
       "title": "About Me"
     }
   ]
