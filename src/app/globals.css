@@ -1,3 +1,67 @@
 @import 'tailwindcss';
 
-/* @config '../../tailwind.config.ts'; */
+body {
+  font-family: monospace;
+}
+
+.post-title {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.post-content {
+  margin-top: 3rem;
+  color: #d1d1d6;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+.post-content p {
+  margin: 0 0 1.75rem;
+}
+
+.post-content ul,
+.post-content ol {
+  margin: 1.5rem 0 1.75rem;
+  padding-left: 2.25rem;
+}
+
+.post-content li {
+  margin: 0 0 1rem;
+  padding-left: 0.25rem;
+}
+
+.post-content ul {
+  list-style: disc;
+}
+
+.post-content ol {
+  list-style: decimal;
+}
+
+.post-content li::marker {
+  color: #67635f;
+  font-size: 0.7em;
+}
+
+.post-content a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.12em;
+}
+
+@media (max-width: 640px) {
+  .post-content {
+    margin-top: 2.5rem;
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .post-content ul,
+  .post-content ol {
+    padding-left: 1.75rem;
+  }
+}

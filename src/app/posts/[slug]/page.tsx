@@ -1,14 +1,14 @@
 import markdownToHtml from "@/lib/markdownToHtml";
 import { OstDocument } from "outstatic";
 import { getDocumentSlugs, load } from "outstatic/server";
-import Layout from "@/components/Layout";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 
 import { Metadata } from "next";
 import { absoluteUrl } from "@/lib/utils";
 
 type Post = {
-  tags: { value: string; label: string }[];
+  keywords?: { value: string; label: string }[];
 } & OstDocument;
 
 interface Params {
@@ -52,41 +52,34 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 
 export default async function PostPage({ params }: Params) {
   const post = await getData({ params });
-  const utcDateTime = new Date(post.publishedAt);
-  const formattedDate = utcDateTime.toLocaleString("en-US", {
-    timeZone: "America/Los_Angeles",
-  });
 
   return (
-    <Layout>
-      <div className="max-w-6xl mx-auto px-5">
-        <article className="mb-32">
-          {Array.isArray(post?.tags)
-            ? post.tags.map(({ label }) => (
-                <span
-                  key="label"
-                  className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+    <div className="mx-auto w-full max-w-5xl px-8 pb-20 sm:px-8">
+      <article>
+        <header className="pt-12 text-center sm:pt-16">
+          <h1 className="post-title">{post.title}</h1>
+
+          {Array.isArray(post?.keywords) && post.keywords.length > 0 ? (
+            <div className="mt-5 flex flex-wrap justify-center gap-2">
+              {post.keywords.map(({ label, value }) => (
+                <Link
+                  key={value}
+                  href={{ pathname: "/blog", query: { keyword: value } }}
+                  className="rounded-full bg-neutral-800 px-3 py-1 text-sm text-neutral-300 transition-colors hover:bg-neutral-700"
                 >
                   {label}
-                </span>
-              ))
-            : null}
-          <h1 className="font-primary text-2xl font-bold md:text-4xl mb-2">
-            {post.title}
-          </h1>
-          <div className="hidden md:block md:mb-12 text-slate-600">
-            Written on {formattedDate}
-          </div>
-          <hr className="border-neutral-200 mt-10 mb-10" />
-          <div className="max-w-8xl mx-auto">
-            <div
-              className="prose lg:prose-xl"
-              dangerouslySetInnerHTML={{ __html: post.content }}
-            />
-          </div>
-        </article>
-      </div>
-    </Layout>
+                </Link>
+              ))}
+            </div>
+          ) : null}
+        </header>
+
+        <div
+          className="post-content"
+          dangerouslySetInnerHTML={{ __html: post.content }}
+        />
+      </article>
+    </div>
   );
 }
 
@@ -103,7 +96,7 @@ async function getData({ params }: Params) {
       "author",
       "content",
       "coverImage",
-      "tags",
+      "keywords",
     ])
     .first();
 

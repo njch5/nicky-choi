@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useRef, useState } from "react";
 import TypewriterText from "@/components/TypewriterText";
 
@@ -18,8 +17,8 @@ export default function Home() {
     }
   };
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+    <div className="flex min-h-[calc(100vh-7rem)] flex-col items-center justify-center gap-16 p-8 sm:p-20">
+      <main className="flex w-full max-w-5xl flex-col items-center gap-8">
         {/* TypingName Component Above the Video */}
         <div className="flex justify-center items-center w-full">
           <TypewriterText text="Hello world! I'm Nicky ☁️" speed={75} />
@@ -51,38 +50,6 @@ export default function Home() {
           ) : null}
         </div>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://www.linkedin.com/in/nickyjchoi/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/linkedin.svg"
-            alt="LinkedIn icon"
-            width={16}
-            height={16}
-          />
-          LinkedIn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="/blog"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/blog-48.png"
-            alt="Blog icon"
-            width={16}
-            height={16}
-          />
-          Blog
-        </a>
-      </footer>
     </div>
   );
 }
