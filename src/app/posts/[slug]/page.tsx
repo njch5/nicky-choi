@@ -64,7 +64,7 @@ export default async function PostPage({ params }: Params) {
               {post.keywords.map(({ label, value }) => (
                 <Link
                   key={value}
-                  href={{ pathname: "/blog", query: { keyword: value } }}
+                  href={`/blog/tags/${encodeURIComponent(value)}`}
                   className="rounded-full bg-neutral-800 px-3 py-1 text-sm text-neutral-300 transition-colors hover:bg-neutral-700"
                 >
                   {label}
