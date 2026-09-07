@@ -1,6 +1,6 @@
 {
-  "commit": "e1668586828b01d64cd208c2ac7e5222024d1694",
-  "generated": "2026-09-06T23:51:31.856Z",
+  "commit": "cf9d77240b500eb92af9e46a58ca4b10edf18714",
+  "generated": "2026-09-07T00:09:09.130Z",
   "metadata": [
     {
       "__outstatic": {
@@ -17,22 +17,6 @@
       "slug": "cool-blog",
       "status": "published",
       "title": "Cool Blog Post"
-    },
-    {
-      "__outstatic": {
-        "commit": "7b79abaa7fb7c40a6ae8e59d79f489599967d190",
-        "hash": "840306773",
-        "path": "outstatic/content/posts/second-blog-post.mdx"
-      },
-      "author": {
-        "name": "Nicky Choi",
-        "picture": "https://avatars.githubusercontent.com/u/32828004?v=4"
-      },
-      "collection": "posts",
-      "publishedAt": "2025-05-03T20:17:18.470Z",
-      "slug": "second-blog-post",
-      "status": "published",
-      "title": "Second Blog Post"
     },
     {
       "__outstatic": {
