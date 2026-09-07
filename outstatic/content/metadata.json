@@ -1,23 +1,7 @@
 {
-  "commit": "cf9d77240b500eb92af9e46a58ca4b10edf18714",
-  "generated": "2026-09-07T00:09:09.130Z",
+  "commit": "ff0d58360ee851e018e0ac7191badbb0ecca98de",
+  "generated": "2026-09-07T00:09:13.139Z",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "c72bfdb15d2556f8b2bdf6d15ce66af31efe8e7d",
-        "hash": "2294977390",
-        "path": "outstatic/content/posts/cool-blog.mdx"
-      },
-      "author": {
-        "name": "Nicky Choi",
-        "picture": "https://avatars.githubusercontent.com/u/32828004?v=4"
-      },
-      "collection": "posts",
-      "publishedAt": "2025-05-03T18:56:46.379Z",
-      "slug": "cool-blog",
-      "status": "published",
-      "title": "Cool Blog Post"
-    },
     {
       "__outstatic": {
         "commit": "e1668586828b01d64cd208c2ac7e5222024d1694",
